@@ -127,7 +127,7 @@ namespace WalkerscottDotNetCoreEF.API.Controllers
            var article= await articleRepository.DeleteArticleAsync(id);
             if (article is null)
             {
-                return NotFound();
+                return NotFound(); 
             }
             //convert domain to dto
             var response = new ArticleResponse
